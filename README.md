@@ -8,7 +8,7 @@
 
 `go` 语言实现的拼多多API SDK【拼多多开放平台】
 
-`go get gitee.com/dtapps/ddjb`
+`go get github.com/Jsaunter/ddjb`
 
 ```go
 import github.com/Jsaunter/ddjb
