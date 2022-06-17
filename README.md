@@ -10,7 +10,7 @@
 
 `go get github.com/Jsaunter/ddjb`
 
-```go
+```
 import github.com/Jsaunter/ddjb
 ```
 

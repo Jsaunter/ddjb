@@ -12,6 +12,7 @@ type PidQueryResponse struct {
 			PId        string `json:"pid,omitempty"`         // 商品品牌词信息，如“苹果”、“阿迪达斯”、“李宁”等
 			Status     int    `json:"status,omitempty"`      // 全局礼金金额，单位分
 		} `json:"p_id_list"`
+		TotalCount string `json:"total_count"`
 	} `json:"p_id_query_response"`
 }
 
