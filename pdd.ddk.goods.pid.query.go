@@ -7,11 +7,11 @@ import (
 type PidQueryResponse struct {
 	PidQueryResponse struct {
 		PidList []struct {
-			CreateTime int    `json:"create_time,omitempty"` // 推广位生成时间
-			MediaId    int    `json:"media_id,omitempty"`    // 媒体id
-			PidName    string `json:"pid_name,omitempty"`    // 推广位名称
-			PId        string `json:"p_id,omitempty"`        // 推广位ID
-			Status     int    `json:"status,omitempty"`      // 推广位状态
+			CreateTime int    `json:"create_time"` // 推广位生成时间
+			MediaId    int    `json:"media_id"`    // 媒体id
+			PidName    string `json:"pid_name"`    // 推广位名称
+			PId        string `json:"p_id"`        // 推广位ID
+			Status     int    `json:"status"`      // 推广位状态
 		} `json:"p_id_list"`
 		TotalCount int `json:"total_count"`
 	} `json:"p_id_query_response"`
