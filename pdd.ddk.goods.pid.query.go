@@ -7,10 +7,11 @@ import (
 type PidQueryResponse struct {
 	PidQueryResponse struct {
 		PidList []struct {
-			CreateTime int    `json:"create_time,omitempty"` // 活动佣金比例，千分比（特定活动期间的佣金比例）
-			PidName    string `json:"pid_name,omitempty"`    // 商品活动标记数组，例：[4,7]，4-秒杀 7-百亿补贴等
-			PId        string `json:"pid,omitempty"`         // 商品品牌词信息，如“苹果”、“阿迪达斯”、“李宁”等
-			Status     int    `json:"status,omitempty"`      // 全局礼金金额，单位分
+			CreateTime int    `json:"create_time,omitempty"` // 推广位生成时间
+			MediaId    int    `json:"media_id,omitempty"`    // 媒体id
+			PidName    string `json:"pid_name,omitempty"`    // 推广位名称
+			PId        string `json:"p_id,omitempty"`        // 推广位ID
+			Status     int    `json:"status,omitempty"`      // 推广位状态
 		} `json:"p_id_list"`
 		TotalCount int `json:"total_count"`
 	} `json:"p_id_query_response"`
